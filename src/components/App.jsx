@@ -1,16 +1,26 @@
+import { GlobalStyle } from './GlobalStyle';
+import { Layout } from './Layout/Layout';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Layout>
+      <section>
+        <form action="">
+          <select name="" id="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </form>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <p></p>
+      </section>
+
+      <GlobalStyle></GlobalStyle>
+    </Layout>
   );
 };
