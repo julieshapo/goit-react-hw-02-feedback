@@ -28,18 +28,3 @@ Statistics.propTypes = {
   total: PropTypes.number.isRequired,
   positiveFeedback: PropTypes.func.isRequired,
 };
-
-// // import PropTypes from 'prop-types';
-// export const Statistics = ({ options, stats, total, percentage }) => {
-//   return (
-//     <div>
-//       {options.map((option, idx) => (
-//         <p key={idx}>
-//           {option} : {stats[option]}
-//         </p>
-//       ))}
-//       <p>Total:</p>
-//       <p>Positive feedback:%</p>
-//     </div>
-//   );
-// };
