@@ -6,6 +6,7 @@ export const Button = styled.button`
   padding: 4px 8px;
   font-size: 16px;
   text-transform: uppercase;
+  color: ${p => p.theme.colors.black};
 
   :not(:last-child) {
     margin-right: 10px;
