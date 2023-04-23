@@ -1,13 +1,25 @@
-// import { FeedbackOptions } from 'components/Feedback/FeedbackOptions';
-// import { Statistics } from 'components/Statistics/Statistics';
+import PropTypes from 'prop-types';
+import { SectionStyle, Title } from './Section.styled';
 
-// export const Section = ({ options, children }) => {
+export const Section = ({ title, children }) => {
+  return (
+    <SectionStyle>
+      <Title>{title}</Title>
+      {children}
+    </SectionStyle>
+  );
+};
+
+Section.propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
+// import PropTypes from 'prop-types';
+// export const Section = ({ title, children }) => {
 //   return (
 //     <Section>
-//       <h1>Please leave feedback</h1>
+//       <h1>{title}</h1>
 //       {children}
-//       <FeedbackOptions options={options} />
-//       <Statistics />
 //     </Section>
 //   );
 // };
