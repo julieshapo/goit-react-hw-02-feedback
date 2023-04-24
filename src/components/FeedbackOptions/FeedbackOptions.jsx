@@ -14,5 +14,5 @@ export const FeedbackOptions = ({ options, onStateUpdate }) => {
 FeedbackOptions.propTypes = {
   options: PropTypes.arrayOf(PropTypes.oneOf(['good', 'neutral', 'bad']))
     .isRequired,
-  updateState: PropTypes.func.isRequired,
+  onStateUpdate: PropTypes.func.isRequired,
 };

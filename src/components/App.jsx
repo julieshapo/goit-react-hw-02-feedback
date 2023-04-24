@@ -14,12 +14,9 @@ export class App extends Component {
   };
 
   setStateUpdate = option => {
-    this.setState(prevState => {
-      let newState = { ...prevState };
-      newState[option] = prevState[option] + 1;
-
-      return newState;
-    });
+    this.setState(prevState => ({
+      [option]: prevState[option] + 1,
+    }));
   };
 
   countTotalFeedback = () => {
